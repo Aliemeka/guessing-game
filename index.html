@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Guessing Game: How Lucky Are You?</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guessing Game</h1>
+    </header>
+    <main>
+      <section id="gameover-overlay" class="overlay">
+        <h3>The right answer is: <span id="right-answer"></span></h3>
+        <button id="retry" class="chances-button">Game over! Try again</button>
+      </section>
+
+      <section class="lucky-card">
+        <h2 id="lucky-number">?</h2>
+      </section>
+
+      <section class="form-section">
+        <h1>Guess the number (from 1 to 10)</h1>
+        <h3 id="feedback"></h3>
+        <form id="guess-form">
+          <input type="text" inputmode="number" name="number" />
+          <button class="chances-button">Submit</button>
+        </form>
+      </section>
+
+      <section class="chances-section">
+        <div class="chances-box">
+          <h3>Chances left: <span id="chances">5</span></h3>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
